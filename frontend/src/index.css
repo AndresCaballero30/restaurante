@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Restaurant theme - warm, elegant colors */
+    --background: 36 33% 97%;
+    --foreground: 30 15% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 15% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 15% 15%;
+
+    /* Rich amber/gold for primary actions */
+    --primary: 32 88% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Warm cream for secondary */
+    --secondary: 36 50% 92%;
+    --secondary-foreground: 30 15% 15%;
+
+    /* Muted warm tones */
+    --muted: 36 33% 94%;
+    --muted-foreground: 30 10% 45%;
+
+    /* Accent gold */
+    --accent: 38 92% 50%;
+    --accent-foreground: 30 15% 15%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 36 25% 88%;
+    --input: 36 25% 88%;
+    --ring: 32 88% 48%;
+
+    --radius: 0.75rem;
+    
+    /* Custom restaurant colors */
+    --restaurant-wood: 25 35% 30%;
+    --restaurant-gold: 38 92% 50%;
+    --restaurant-cream: 36 50% 95%;
+    --restaurant-success: 142 76% 36%;
+    
+    /* Shadows and effects */
+    --shadow-elegant: 0 4px 20px -2px hsl(30 15% 15% / 0.1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 30 15% 12%;
+    --foreground: 36 33% 95%;
+
+    --card: 30 15% 15%;
+    --card-foreground: 36 33% 95%;
+
+    --popover: 30 15% 15%;
+    --popover-foreground: 36 33% 95%;
+
+    --primary: 38 92% 50%;
+    --primary-foreground: 30 15% 12%;
+
+    --secondary: 30 15% 20%;
+    --secondary-foreground: 36 33% 95%;
+
+    --muted: 30 15% 20%;
+    --muted-foreground: 36 20% 65%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 30 15% 12%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 36 33% 95%;
+
+    --border: 30 15% 25%;
+    --input: 30 15% 25%;
+    --ring: 38 92% 50%;
+    
+    --restaurant-wood: 25 35% 20%;
+    --restaurant-gold: 38 92% 50%;
+    --restaurant-cream: 30 15% 18%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
