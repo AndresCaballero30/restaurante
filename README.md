@@ -22,3 +22,6 @@ Este proyecto es una aplicación web full-stack diseñada para la gestión integ
 
 ## Integrantes
 *   **Andres Benjamín Caballero Basagoitia**
+
+## Lista de tareas
+[Tablero de Trello](https://trello.com/invite/b/693a3eae81ccfe0cdb241238/ATTI32d1c4837bcf1bd74f5cb1b88386a34527769497/restaurante)
